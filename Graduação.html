@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Graduação - Karatê-Do</title>
+    <!-- Linha para mudar o ícone da aba do navegador -->
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <!-- Vincula ao arquivo CSS externo -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-content">
+            <h1>KARATÊ-DO<span> 空手道</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">História</a></li>
+                    <li><a href="Pilares.html">Os Pilares</a></li>
+                    <li><a href="Graduação.html" class="ativo-link">Graduação</a></li>
+                    <li><a href="Filosofia.html">Filosofia</a></li>
+                    <li><a href="competiçao.html">Competição</a></li>
+                    <li><a href="estilos.html">Estilos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Graduação -->
+    <section class="container">
+        <h2 class="section-title">O Sistema de Graduação (Kyu e Dan)</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 25px;">Clique em qualquer faixa abaixo para ver os objetivos de treino, fotos e vídeos específicos de cada graduação:</p>
+        
+        <!-- Lista de Botões das Faixas -->
+        <div class="faixas-lista">
+            <button class="btn-faixa f-branca" onclick="mostrarFaixa('branca', this)">Branca (7º Kyu)</button>
+            <button class="btn-faixa f-amarela" onclick="mostrarFaixa('amarela', this)">Amarela (6º Kyu)</button>
+            <button class="btn-faixa f-laranja" onclick="mostrarFaixa('laranja', this)">Laranja (5º Kyu)</button>
+            <button class="btn-faixa f-azul" onclick="mostrarFaixa('azul', this)">Azul (4º Kyu)</button>
+            <button class="btn-faixa f-verde" onclick="mostrarFaixa('verde', this)">Verde (3º Kyu)</button>
+            <button class="btn-faixa f-roxa" onclick="mostrarFaixa('roxa', this)">Roxa (2º Kyu)</button>
+            <button class="btn-faixa f-marrom" onclick="mostrarFaixa('marrom', this)">Marrom (1º Kyu)</button>
+            <button class="btn-faixa f-preta" onclick="mostrarFaixa('preta', this)">Preta (1º Dan) ★</button>
+        </div>
+
+        <!-- PAINÉIS DE DETALHES DE CADA FAIXA -->
+
+        <!-- Faixa Branca -->
+        <div id="fx-branca" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Faixa Branca - O Início da Jornada</h3>
+                    <p>A cor branca representa a pureza, a mente aberta e o potencial do iniciante. É a folha em branco onde os primeiros conhecimentos serão escritos.</p>
+                    <p><strong>Foco do Treino:</strong> Aprender a etiqueta do dojo, as bases iniciais (Zenkutsu-dachi) e os primeiros socos e defesas do Kihon. É a fase de se adaptar ao ritmo dos treinos.</p>
+                </div>
+                <div class="midia-box">
+                    <img src="./faixabranca.png" alt="Faixa Branca">
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa Amarela -->
+        <div id="fx-amarela" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Faixa Amarela - O Despertar</h3>
+                    <p>Simboliza o sol nascente e a terra que começa a receber os primeiros raios de luz do conhecimento marcial.</p>
+                    <p><strong>Foco do Treino:</strong> Começa-se a exigir mais estabilidade nas bases, velocidade nos golpes e a introdução dos primeiros Katas oficiais (como o Heian Shodan).</p>
+                </div>
+                <div class="midia-box">
+                    <img src="./faixaamarela.png" alt="Faixa Amarela">
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa Laranja -->
+        <div id="fx-laranja" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Faixa Laranja - A Energia</h3>
+                    <p>Representa o amadurecimento, o vigor e o crescimento da energia solar do karateca dentro do dojo.</p>
+                    <p><strong>Foco do Treino:</strong> Transições rápidas entre as bases, chutes mais técnicos e foco no ganho de força explosiva no Kihon básico.</p>
+                </div>
+                <div class="midia-box">
+                    <img src="./faixalaranja.png" alt="Faixa Laranja">
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa Azul -->
+        <div id="fx-azul" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Faixa Azul - A Percepção e a Calmaria</h3>
+                    <p>O azul simboliza a cor do oceano e do céu. Representa um karateca que já superou as fases iniciais e começa a encontrar serenidade, fluidez e maior controle sobre suas técnicas.</p>
+                    <p><strong>Foco do Treino:</strong> Desenvolvimento da coordenação fina, agilidade nas esquivas e contra-ataques. Os treinos de Kumite começam a exigir inteligência tática, e novos Katas intermediários são ensinados.</p>
+                </div>
+                <div class="midia-box">
+                    <img src="./faixaazul.png" alt="Faixa Azul">
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa Verde -->
+        <div id="fx-verde" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Faixa Verde - O Florescimento</h3>
+                    <p>Representa a planta que cresce para cima e cria raízes profundas na terra. O praticante começa a fixar sua própria identidade técnica.</p>
+                    <p><strong>Foco do Treino:</strong> Ritmo, fluidez nos movimentos e aplicação pesada do Bunkai (a aplicação em combate real de cada golpe dos Katas).</p>
+                </div>
+                <div class="midia-box">
+                    <img src="./faixaverde.png" alt="Faixa Verde">
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa Roxa -->
+        <div id="fx-roxa" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Faixa Roxa - A Transição</h3>
+                    <p>Uma cor mística que indica que o aluno cruzou a linha do nível básico/intermediário e entra no limiar dos treinos avançados. Exige maior introspecção e foco mental.</p>
+                    <p><strong>Foco do Treino:</strong> Potência máxima, combinações complexas de ataques contínuos e controle total do espírito no Kumite livre.</p>
+                </div>
+                <div class="midia-box">
+                    <img src="./faixaroxa.png" alt="Faixa Roxa">
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa Marrom -->
+        <div id="fx-marrom" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Faixa Marrom - O Amadurecimento</h3>
+                    <p>A cor da terra firme e do tronco forte. Significa que a técnica do karateca está sólida, mas precisa ser polida exaustivamente para alcançar o nível de mestre.</p>
+                    <p><strong>Foco do Treino:</strong> Lapidação técnica extrema, preparação física para o exame de faixa preta e desenvolvimento do papel de liderança auxiliando os menos graduados.</p>
+                </div>
+                <div class="midia-box">
+                    <img src="./faixamarrom.png" alt="Faixa Marrom">
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa Preta -->
+        <div id="fx-preta" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Faixa Preta - O Recomeço</h3>
+                    <p>O acúmulo de todo o conhecimento. Ao contrário do senso comum, a faixa preta não representa o fim dos estudos, mas o renascimento do praticante como um verdadeiro estudante da arte (1º Dan).</p>
+                    <p><strong>Foco do Treino:</strong> Domínio técnico pleno, inteligência emocional superior e autoconhecimento. O objetivo é a perfeição do caráter e espalhar os valores do Karatê-Do.</p>
+                </div>
+                <div class="midia-box">
+                    <img src="./faixapreta.png" alt="Faixa Preta">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Rodapé fora de containers para ocupar 100% da largura -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Desenvolvido por Lu 💻🥋💙</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript das Faixas -->
+    <script>
+        function mostrarFaixa(idFaixa, elemento) {
+            const paineisFaixa = document.querySelectorAll('.painel-conteudo');
+            paineisFaixa.forEach(p => p.style.display = 'none');
+
+            const botoesFaixa = document.querySelectorAll('.btn-faixa');
+            botoesFaixa.forEach(b => b.classList.remove('ativo-faixa'));
+
+            const painelSelecionado = document.getElementById('fx-' + idFaixa);
+            if (painelSelecionado) painelSelecionado.style.display = 'block';
+
+            if (elemento) elemento.classList.add('ativo-faixa');
+        }
+
+        // Abre automaticamente na Faixa Preta ao carregar a página
+        window.addEventListener('DOMContentLoaded', () => {
+            const faixaPretaBtn = document.querySelector('.f-preta');
+            mostrarFaixa('preta', faixaPretaBtn);
+        });
+    </script>
+</body>
+</html>

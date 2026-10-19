@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os Três Pilares - Karatê-Do</title>
+    <!-- Linha para mudar o ícone da aba do navegador -->
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <!-- Vincula ao arquivo CSS externo -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-content">
+            <h1>KARATÊ-DO<span> 空手道</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">História</a></li>
+                    <li><a href="Pilares.html" class="ativo-link">Os Pilares</a></li>
+                    <li><a href="Graduação.html">Graduação</a></li>
+                    <li><a href="Filosofia.html">Filosofia</a></li>
+                    <li><a href="competiçao.html">Competição</a></li>
+                    <li><a href="estilos.html">Estilos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo dos Pilares -->
+    <section class="container">
+        <h2 class="section-title">Os Três Pilares do Treino (San-Shin)</h2>
+        <p style="text-align: center; margin-bottom: 25px;">O aprendizado do Karatê-Do sustenta-se em uma tríade fundamental. Clique em um dos pilares abaixo para explorar o conteúdo detalhado de cada pilar:</p>
+        
+        <!-- Botões de Seleção -->
+        <div class="botoes-container">
+            <button class="btn-pilar" onclick="mostrarPilar('kihon', this)">Kihon (基本)</button>
+            <button class="btn-pilar" onclick="mostrarPilar('kata', this)">Kata (型)</button>
+            <button class="btn-pilar" onclick="mostrarPilar('kumite', this)">Kumite (組手)</button>
+        </div>
+
+        <!-- Conteúdo: KIHON -->
+        <div id="content-kihon" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Kihon (基本) — A Fundação e a Técnica Pura</h3>
+                    <p>A palavra <strong>Kihon</strong> significa literalmente "base" ou "fundamento". É a prática dedicada à repetição contínua dos movimentos básicos para alcançar a precisão mecânica, a postura correta, a geração de potência (Kime) e o controle do centro de gravidade (Hara/Tanden).</p>
+                    
+                    <p>Sem um Kihon bem consolidado, as técnicas falham sob pressão no combate e perdem a forma plástica durante a execução dos Katas.</p>
+
+                    <h4>Principais Categorias do Kihon:</h4>
+                    <ul>
+                        <li><strong>Tachiwaza (Bases):</strong> A estabilidade é a origem do poder.
+                            <ul>
+                                <li><em>Zenkutsu-dachi:</em> Base avançada e longa, com 60% do peso na perna da frente.</li>
+                                <li><em>Kokutsu-dachi:</em> Base recuada e defensiva, com 70% do peso na perna de trás.</li>
+                                <li><em>Kiba-dachi:</em> Base do cavaleiro, focada no fortalecimento das pernas e equilíbrio lateral.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tsukiwaza (Ataques Diretos / Socos):</strong>
+                            <ul>
+                                <li><em>Oi-zuki:</em> Soco avançando com o mesmo pé da mão que ataca.</li>
+                                <li><em>Gyaku-zuki:</em> Soco reverso, usando o giro do quadril para maximizar o impacto.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Ugewaza (Técnicas de Defesa):</strong>
+                            <ul>
+                                <li><em>Age-uke:</em> Defesa ascendente para proteger a cabeça no nível Jodan.</li>
+                                <li><em>Gedan-barai:</em> Defesa baixa em varredura para proteger o abdômen e pernas.</li>
+                                <li><em>Soto-uke e Uchi-uke:</em> Defesas médias (Chudan) contra ataques no tórax.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Keriwaza (Chutes):</strong>
+                            <ul>
+                                <li><em>Mae-geri:</em> Chute frontal direto com a planta do pé (Koshi).</li>
+                                <li><em>Mawashi-geri:</em> Chute circular com o peito do pé ou a bola do pé.</li>
+                                <li><em>Yoko-geri:</em> Chute lateral com a faca do pé (Sokuto).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="midia-box">
+                    <img src="kihonimagem.jpg" alt="Treino de Kihon">
+                    <img src="kihon2.jpg" alt="Técnica de Kihon Age-uke">
+                    <img src="kihon3.jpg" alt="Técnica de Kihon Age-uke">
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo: KATA -->
+        <div id="content-kata" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Kata (型) — A Biblioteca Viva do Karatê</h3>
+                    <p>O <strong>Kata</strong> ("forma") é uma sequência predeterminada de movimentos que simula um combate contra múltiplos oponentes invisíveis que atacam de diferentes direções. Historicamente, os mestres de Okinawa codificavam suas técnicas secretas nos Katas para transmiti-las entre gerações.</p>
+
+                    <p>No Kata, o praticante desenvolve controle de respiração (Ibuki), variação de ritmo (lento/rápido), direção da força e concentração (Zanshin).</p>
+
+                    <h4>Conceitos Fundamentais do Kata:</h4>
+                    <ul>
+                        <li><strong>Embusen (演武線):</strong> A linha de movimentação do Kata no chão. Cada Kata possui um ponto exato de início e deve terminar exatamente no mesmo local de partida.</li>
+                        <li><strong>Bunkai (分解):</strong> O estudo analítico do Kata. Consiste em desconstruir cada movimento da coreografia e aplicar na prática contra um colega de treino em situação real de defesa pessoal.</li>
+                        <li><strong>Série Heian / Pinan:</strong> Cinco Katas básicos desenvolvidos para introduzir os iniciantes às movimentações essenciais antes do estudo dos Katas avançados.</li>
+                    </ul>
+                </div>
+                <div class="midia-box">
+                    <img src="kata.jpg" alt="Execução de Kata">
+                    <img src="kata2.jpg" alt="Postura de Kata Shuto-uke">
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo: KUMITE -->
+        <div id="content-kumite" class="painel-conteudo">
+            <div class="detalhe-grid">
+                <div class="detalhe-texto">
+                    <h3>Kumite (組手) — O Encontro das Mãos</h3>
+                    <p>O <strong>Kumite</strong> é o pilar prático da arte marcial onde a velocidade do Kihon e a estratégia do Kata são colocadas à prova contra um adversário real em tempo real. O foco principal não é a violência, mas sim a percepção de distância (Maai), tempo de reação (Sen) e autocontrole emocional.</p>
+
+                    <h4>Estágios de Evolução no Kumite:</h4>
+                    <ul>
+                        <li><strong>Gohon Kumite / Sanbon Kumite:</strong> Combates combinados com 5 ou 3 passos. O atacante anuncia o golpe e o defensor aplica a defesa e o contra-ataque predefinidos.</li>
+                        <li><strong>Ippon Kumite:</strong> Combate de um único passo focado no princípio do <em>Ikken Hissatsu</em> (um golpe decisivo).</li>
+                        <li><strong>Jiyu Kumite:</strong> Luta livre sem anúncios prévios, onde os dois praticantes buscam brechas defensivas mantendo o controle pleno do impacto.</li>
+                        <li><strong>Shiai Kumite:</strong> O combate de competição esportiva regido pela WKF, com pontuações divididas em:
+                            <ul>
+                                <li><em>Yuko (1 ponto):</em> Socos nas áreas válidas (cabeça/tórax).</li>
+                                <li><em>Waza-ari (2 pontos):</em> Chutes no tórax/costas (Chudan).</li>
+                                <li><em>Ippon (3 pontos):</em> Chutes na cabeça (Jodan) ou golpes executados após a derrubada do adversário.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="midia-box">
+                    <img src="kumite.jpg" alt="Luta de Kumite Chute">
+                    <img src="kumite2.jpg" alt="Luta de Kumite Soco">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé fora de containers para ocupar 100% da largura -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Desenvolvido por Lu 💻🥋💙</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript das Abas dos Pilares -->
+    <script>
+        function mostrarPilar(idPilar, elemento) {
+            const paineis = document.querySelectorAll('.painel-conteudo');
+            paineis.forEach(p => p.style.display = 'none');
+
+            const botoes = document.querySelectorAll('.btn-pilar');
+            botoes.forEach(b => b.classList.remove('ativo'));
+
+            const painelSelecionado = document.getElementById('content-' + idPilar);
+            if (painelSelecionado) painelSelecionado.style.display = 'block';
+
+            if (elemento) elemento.classList.add('ativo');
+        }
+
+        // Abre automaticamente o Kihon assim que a página carregar
+        window.addEventListener('DOMContentLoaded', () => {
+            const primeiroPilarBtn = document.querySelector('.btn-pilar');
+            mostrarPilar('kihon', primeiroPilarBtn);
+        });
+    </script>
+</body>
+</html>

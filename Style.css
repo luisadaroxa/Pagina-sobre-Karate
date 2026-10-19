@@ -1,0 +1,503 @@
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Faz a área central crescer e empurrar o rodapé para o fundo */
+        section.container {
+            flex: 1;
+        }
+        
+        :root {
+            --azul-escuro: #0a192f;
+            --azul-principal: #172a45;
+            --azul-destaque: #3066be;
+            --azul-claro: #b4c5e4;
+            --branco: #f4f7f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--branco);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho e Menu */
+        header {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+
+        h1 span {
+            color: var(--azul-claro);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--branco);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--azul-claro);
+        }
+
+        /* BANNER HERO INICIAL (INDEX.HTML)*/
+
+        .hero-banner {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1e3c72 50%, #2a5298 100%);
+            color: #ffffff;
+            padding: 55px 20px;
+            text-align: center;
+            border-radius: 0 0 16px 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #eef3fc;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero-banner h2 {
+            font-size: 2.2rem;
+            margin: 10px 0 15px 0;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .hero-banner p {
+            font-size: 1.1rem;
+            color: #d0e1fd;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Caixa Visual dos Kanjis (Kara + Te) */
+        .hero-kanji-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(5px);
+            padding: 18px 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .kanji-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .kanji-item .kanji {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .kanji-item .significado {
+            font-size: 0.8rem;
+            color: #c2d8fc;
+            margin-top: 4px;
+        }
+
+        .kanji-plus {
+            font-size: 1.4rem;
+            color: #64b5f6;
+            font-weight: bold;
+        }
+
+        .kanji-item.destaque .kanji {
+            color: #64b5f6;
+        }
+
+        /* Destaque para o cartão central */
+        .valor-box.destacado-box {
+            border-top: 4px solid #2a5298;
+            background-color: #ffffff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--azul-escuro);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--azul-destaque);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Sobre o Karatê */
+        .sobre-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .sobre-texto p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .destaque-box {
+            background-color: var(--azul-principal);
+            color: var(--branco);
+            padding: 25px;
+            border-left: 5px solid var(--azul-destaque);
+            border-radius: 4px;
+        }
+
+        /* Os Três Pilares */
+        .pilares-bg {
+            background-color: #e9ecef;
+        }
+
+        .botoes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn-pilar {
+            background-color: var(--azul-principal);
+            color: var(--branco);
+            border: 2px solid var(--azul-destaque);
+            padding: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-pilar:hover, .btn-pilar.ativo {
+            background-color: var(--azul-destaque);
+            color: var(--branco);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(48, 102, 190, 0.3);
+        }
+
+        /* Painéis de Conteúdo (Pilares e Faixas) */
+        .painel-conteudo {
+            background-color: var(--branco);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .detalhe-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .detalhe-texto h3 {
+            color: var(--azul-escuro);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .detalhe-texto p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .detalhe-texto ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .midia-box img {
+            width: 100%;
+            height: 280px; /* Aumentamos um pouquinho a altura para dar espaço */
+            object-fit: contain; /* Ajusta a imagem inteira dentro do quadro sem cortar nada! */
+            background-color: #ffffff; /* Fundo branco limpo para combinar com as ilustrações */
+            padding: 10px; /* Pequeno respiro nas bordas */
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Sistema de Faixas (Botões de Graduação) */
+        .faixas-lista {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn-faixa {
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-faixa:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn-faixa.ativo-faixa {
+            outline: 3px solid var(--azul-destaque);
+            outline-offset: 2px;
+        }
+
+        /* Cores dos Botões das Faixas */
+        .f-branca { background-color: #fff; color: #000; border: 1px solid #ccc; }
+        .f-amarela { background-color: #ffeb3b; color: #000; border: 1px solid #ddca1a; }
+        .f-laranja { background-color: #ff9800; color: #fff; border: none; }
+        .f-azul { background-color: #2196f3; color: #fff; border: none; }
+        .f-verde { background-color: #4caf50; color: #fff; border: none; }
+        .f-roxa { background-color: #9c27b0; color: #fff; border: none; }
+        .f-marrom { background-color: #795548; color: #fff; border: none; }
+        .f-preta { background-color: #000; color: #fff; border: 2px solid var(--azul-destaque); }
+
+        /* Filosofia / Dojo Kun */
+        .dojo-kun {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+        }
+
+        .dojo-kun ol {
+            list-style-position: inside;
+            display: inline-block;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
+        .dojo-kun li {
+            margin-bottom: 15px;
+        }
+
+        /* Rodapé */
+
+        footer {
+            width: 100%;
+            background-color: #0d1b2a; /* Tom azul bem escuro / noite */
+            color: #ffffff;
+            padding: 25px 0;
+            margin-top: 60px; /* Afasta o rodapé dos cartões de cima */
+            text-align: center;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #d0e1fd;
+            font-weight: 500;
+        }
+        /* Estilos Específicos para a Página de Filosofia */
+
+        .subtitulo-filosofia {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 30px auto;
+        color: #555555;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        }
+
+        /* Estrutura dos Cartões do Dojo Kun */
+        .dojo-kun-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .dojo-card {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-left: 5px solid #1e3c72; /* Tom azul escuro de destaque */
+            border-radius: 8px;
+            padding: 20px 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .dojo-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(30, 60, 114, 0.15);
+        }
+
+        .dojo-numero {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1e3c72;
+            background-color: #eef3fc;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .dojo-conteudo h3 {
+            margin: 0 0 4px 0;
+            color: #111111;
+            font-size: 1.15rem;
+        }
+
+        .dojo-conteudo .japones {
+            font-size: 0.9rem;
+            color: #2a5298;
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+
+        .dojo-conteudo p {
+            margin: 0;
+            color: #444444;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Seção de Valores e Tradição */
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .valor-box {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .valor-box h3 {
+            color: #1e3c72;
+            margin-top: 0;
+            border-bottom: 2px solid #eef3fc;
+            padding-bottom: 8px;
+        }
+
+        .citacao {
+            background-color: #eef3fc;
+            border-left: 4px solid #2a5298;
+            margin: 15px 0 0 0;
+            padding: 12px 15px;
+            font-style: italic;
+            color: #1e3c72;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .valor-box ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .valor-box li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+
+        /* Estilo para Vídeos Locais */
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            display: block;
+        }

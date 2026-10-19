@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competição - Karatê-Do</title>
+    <!-- Ícone da aba do navegador -->
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <!-- Liga ao arquivo CSS externo do site -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header>
+        <div class="container header-content">
+            <h1>KARATÊ-DO<span> 空手道</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">História</a></li>
+                    <li><a href="Pilares.html">Os Pilares</a></li>
+                    <li><a href="Graduação.html">Graduação</a></li>
+                    <li><a href="Filosofia.html">Filosofia</a></li>
+                    <li><a href="competicao.html" class="ativo-link">Competição</a></li>
+                    <li><a href="estilos.html">Estilos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal: Karatê de Competição -->
+    <section class="container">
+        <h2 class="section-title">Karatê de Competição (Shiai Kumite e Kata)</h2>
+        <p class="subtitulo-filosofia">
+            O Karatê esportivo moderno é promovido mundialmente pela <strong>WKF (World Karate Federation)</strong>. As competições oficiais reúnem atletas de alto nível em duas modalidades distintas: o combate regrado (Kumite) e a apresentação técnica de formas (Kata).
+        </p>
+        
+        <!-- Grid de Modalidades com Vídeos Locais -->
+        <div class="valores-grid">
+            
+            <!-- Caixa 1: Competição de Kata -->
+            <div class="valor-box">
+                <h3>1. Competição de Kata</h3>
+                <p>O atleta executa uma sequência formal de movimentos sob a avaliação minuciosa de um painel de árbitros.</p>
+                
+                <!-- Vídeo Local de Kata -->
+                <div class="video-container">
+                    <video controls preload="metadata">
+                        <source src="midia/videoplayback (1).mp4" type="video/mp4">
+                        O seu navegador não suporta a reprodução deste vídeo.
+                    </video>
+                </div>
+
+                <ul>
+                    <li><strong>Critérios Técnicos (60%):</strong> Precisão de posturas (Tachi), alinhamento, geração de potência (Kime) e synchronismo da respiração.</li>
+                    <li><strong>Critérios Atléticos (40%):</strong> Força, velocidade de explosão, agilidade e equilíbrio dinâmico.</li>
+                </ul>
+            </div>
+
+            <!-- Caixa 2: Competição de Kumite -->
+            <div class="valor-box">
+                <h3>2. Competição de Kumite</h3>
+                <p>Luta livre esportiva com controle estrito de contato, onde dois competidores disputam a maior pontuação.</p>
+
+                <!-- Vídeo Local de Kumite -->
+                <div class="video-container">
+                    <video controls preload="metadata">
+                        <source src="midia/videoplayback.mp4" type="video/mp4">
+                        O seu navegador não suporta a reprodução deste vídeo.
+                    </video>
+                </div>
+
+                <ul>
+                    <li><strong>Yuko (1 Ponto):</strong> Socos diretos no tórax ou na cabeça.</li>
+                    <li><strong>Waza-Ari (2 Pontos):</strong> Chutes aplicados na área do tórax/costas.</li>
+                    <li><strong>Ippon (3 Pontos):</strong> Chutes na cabeça ou golpear o oponente caído.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section> <!-- AQUI: Esta tag </section> estava faltando! -->
+
+    <!-- Rodapé fora do container para ocupar 100% da largura da tela -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Desenvolvido por Lu 💻🥋💙</p>
+        </div>
+    </footer>
+
+</body>
+</html>
